@@ -1,0 +1,156 @@
+.search-box{
+    display: flex;
+    flex: 1;
+    height: 38px;
+    /* border-radius: 40px; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color:rgb(255, 255, 255);
+    padding-left: 16px;
+    padding-right: 4px;
+    box-shadow: inset 0 1px 2px var();
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-width: 1px;
+    margin-left: 32px;
+    width: 0;
+
+}
+.search-box::placeholder{
+    font-family: Roboto, Noto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.header{
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+}
+.right-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 215px;
+    max-width: 145px;
+    flex-shrink: 0;
+    margin-top: 0px;
+    margin-left: 130px;
+}
+.middle-section{
+    display: flex;
+    flex: 1;
+    margin-left: 14px;
+    align-items: center;
+}
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.hamburger:hover{
+    border-radius: 150px;
+    background-color: rgb(218,218,218); 
+}
+.YT-icon{
+    cursor: pointer;
+    width: 90px;
+    height: 20px;
+    padding-left: 16px;
+    padding-right: 14px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-right: 90px;
+}
+.search-button{
+    padding-left: 20px;
+    padding-right: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    width: 66px;
+    height: 41px;
+    background-color: rgb(248,248,248);
+    border-width: 1.3px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-style: solid;
+    border-color: rgb(204,204,204);
+}
+.search-button, .mic-button, .create-button, .notification-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-button .tool-tip, .mic-button .tool-tip, .create-button .tool-tip, .notification-button .tool-tip{
+    position: absolute;
+    background-color: rgb(99,99,99);
+    color: white;
+    font-family: Roboto,Arial;
+    white-space: nowrap;
+    font-size: 12px;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.search-button:hover .tool-tip, .mic-button:hover .tool-tip, .create-button:hover .tool-tip, .notification-button:hover .tool-tip{
+    background-color: rgb(100,100,100);
+    opacity: 0.9;
+}
+.search-button:hover,  .mic-button:hover{
+    background-color: rgb(218,218,218);
+}
+.mic-button{
+    margin-left: 18px;
+    cursor: pointer;
+    width: 41px;
+    height: 41px;
+    border-style: solid;
+    background-color: rgb(246, 244, 244);
+    border-color: rgb(246, 244, 244);
+    border-radius: 70px;
+    padding: 10px 10px;
+    border: 0;
+}
+.create, .notification, .avatar{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.avatar{
+    width: 32px;
+    height: 32px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 100px;
+}
+.create:hover, .notification:hover{
+    background-color: rgb(218,218,218);
+}
