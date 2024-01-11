@@ -8,18 +8,20 @@
     background-color:rgb(255, 255, 255);
     padding-left: 16px;
     padding-right: 4px;
-    box-shadow: inset 0 1px 2px var();
+    box-shadow: inset 0px 0px 2px 0px rgb(201, 201, 201);
     border-style: solid;
     border-color: rgb(204, 204, 204);
     border-width: 1px;
     margin-left: 32px;
     width: 0;
-
 }
 .search-box::placeholder{
     font-family: Roboto, Noto, sans-serif;
     font-weight: 400;
     font-size: 16px;
+}
+.search-box:active{
+    border-color: rgb(204, 204, 204);
 }
 .header{
     margin-bottom: 55px;
@@ -54,10 +56,7 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px;
 }
 .hamburger:hover{
     border-radius: 150px;
@@ -67,17 +66,11 @@
     cursor: pointer;
     width: 90px;
     height: 20px;
-    padding-left: 16px;
-    padding-right: 14px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 18px 14px 18px 16px;
     margin-right: 90px;
 }
 .search-button{
-    padding-left: 20px;
-    padding-right: 22px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 22px 8px 20px;
     cursor: pointer;
     width: 66px;
     height: 41px;
@@ -102,10 +95,7 @@
     white-space: nowrap;
     font-size: 12px;
     border-radius: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px;
     bottom: -40px;
     opacity: 0;
     transition: opacity 0.3s;
@@ -134,10 +124,7 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 8px;
     border-radius: 20px;
     margin-left: 4px;
     margin-right: 4px;
@@ -145,10 +132,7 @@
 .avatar{
     width: 32px;
     height: 32px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 6px;
     border-radius: 100px;
 }
 .create:hover, .notification:hover{
