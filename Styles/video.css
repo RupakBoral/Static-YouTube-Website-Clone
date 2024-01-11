@@ -1,11 +1,28 @@
 
 .video-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
     margin-left: 100px;
     margin-right: 16px;
+    font-family: Ruboto,Arial; 
+    /* font-family is inherited */
+}
+@media(max-width:1097px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:1098px) and (max-width:1599){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(min-width:1600px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 .video-info-grid{
     display: grid;
@@ -13,7 +30,6 @@
     visibility: visible;
 }
 .video-preview{
-    font-family: Roboto, Arial;
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
@@ -37,7 +53,6 @@
     position: absolute;
     bottom: 8px;
     right: 4px;
-    font-family: Ruboto,Arial;
     font-size: 12px;
     font-family: 400;
     padding: 3px;
@@ -65,5 +80,3 @@
 .video-author{
     margin-bottom: 4px;
 }
-
-
